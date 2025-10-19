@@ -181,5 +181,6 @@ The **Streamlit app** allows users to:
 **Venkata Jyothi Priya Mulaka**
 Master’s in Applied Data Science
 University of Florida (2024 – 2026)
-📧 Email: [[your-email@ufl.edu](mvjpriya@gmail.com)]
-🔗 GitHub: [https://github.com/<your-username>](https://github.com/MVJyothiPriya)
+📧 Email: [mvjpriya@gmail.com](mailto:mvjpriya@gmail.com)  
+🔗 GitHub: [https://github.com/MVJyothiPriya](https://github.com/MVJyothiPriya)
+
