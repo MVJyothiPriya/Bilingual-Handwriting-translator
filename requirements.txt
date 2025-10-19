@@ -1,0 +1,26 @@
+# Core ML and Deep Learning
+torch
+torchvision
+torchaudio
+numpy
+pandas
+scikit-learn
+
+# Image Processing
+opencv-python
+Pillow
+matplotlib
+tqdm
+
+# OCR and Text Handling
+easyocr
+
+# Web Interface
+streamlit
+
+# Utilities and Visualization
+seaborn
+plotly
+
+# Optional: for saving/loading models and configs
+pyyaml
