@@ -75,8 +75,11 @@ jupyter notebook notebooks/setup.ipynb
 You should see:
 
 ✅ Successful library imports
+
 ✅ Dataset paths verified
+
 ✅ Sample handwriting images displayed
+
 
 ### How to Run the Notebook
 **1️. Dataset Check & Environment Test**
@@ -87,7 +90,7 @@ notebooks/setup.ipynb
 ```
 
 
-This notebook:
+**This notebook:**
 
 Loads and previews English (IAM) and Telugu (TeluguSeg) handwriting samples.
 
@@ -100,7 +103,7 @@ Run:
 ```bash
 notebooks/ml_project.ipynb
 ```
-During training:
+**During training:**
 
 Images are resized to 128×128, converted to grayscale, and normalized to [-1,1].
 
@@ -116,7 +119,7 @@ The model trains two generators (English→Telugu, Telugu→English) and two dis
 
 ## Training Configuration:
 
-Parameter	Value
+**Parameter	Value**
 Epochs	84
 Batch Size	8
 Optimizer	Adam (lr = 0.0002, β₁ = 0.5, β₂ = 0.999)
@@ -140,7 +143,7 @@ python app_gradio.py
 ```
 
 
-The Gradio interface allows users to:
+**The Gradio interface allows users to:**
 
 Upload handwriting samples (English or Telugu).
 
@@ -185,13 +188,16 @@ Processing time: ~1–2 seconds per image on GPU
 ---
 ### Evaluation and Results
 **Quantitative Evaluation**
-Translation Direction	SSIM	MSE
-English → Telugu	0.451	4377.38
-Telugu → English	0.385	3831.50
+
+| Translation Direction | SSIM  | MSE     |
+|:----------------------|:-----:|:-------:|
+| English → Telugu      | 0.451 | 4377.38 |
+| Telugu → English      | 0.385 | 3831.50 |
+
 
 Lower SSIM and higher MSE indicate greater stylistic change while maintaining stroke structure.
 
-Qualitative Results
+**Qualitative Results**
 
 Telugu → English: Sharp and contrast-balanced outputs.
 
@@ -199,13 +205,13 @@ English → Telugu: Authentic Telugu-style strokes after brightness correction.
 
 Stable generator–discriminator convergence achieved at epoch 84.
 
-Known Issues
+**Known Issues**
 
 Slight over-brightness in early epochs (corrected via post-processing).
 
 SSIM may undervalue stylistically accurate outputs that differ visually.
 
-Training time ≈ 8–10 hours on GPU for 84 epochs due to unpaired dataset size
+Training time ≈ 12–15 hours on GPU for 84 epochs due to unpaired dataset size
 ----
 
 ## **Author**
