@@ -56,7 +56,7 @@ cd Bilingual-Handwriting-translator
 
 If using **Conda**:
 
-```bash
+bash
 conda create -n handwriting python=3.10
 conda activate handwriting
 
