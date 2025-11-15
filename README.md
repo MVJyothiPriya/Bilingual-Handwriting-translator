@@ -66,10 +66,8 @@ conda activate handwriting
 pip install -r requirements.txt
 
 ### **4️. Verify setup**
-
-```bash
 Run:
-
+```bash
 jupyter notebook notebooks/setup.ipynb
 ```
 
@@ -84,8 +82,9 @@ You should see:
 **1️. Dataset Check & Environment Test**
 
 Open:
-
+```bash
 notebooks/setup.ipynb
+```
 
 
 This notebook:
@@ -97,14 +96,10 @@ Confirms dataset accessibility and format.
 Ensures GPU and environment setup are correct.
 
 ### 2️. Model Training
-
-```bash
 Run:
-
+```bash
 notebooks/ml_project.ipynb
 ```
-
-
 During training:
 
 Images are resized to 128×128, converted to grayscale, and normalized to [-1,1].
@@ -137,10 +132,9 @@ Checkpoints	Every 10 epochs
 ✅ SSIM and MSE metrics automatically computed for evaluation
 
 ## 3️. Launch the Interactive Interface
-
-```bash
 After training, open:
 
+```bash
 cd ui
 python app_gradio.py
 ```
