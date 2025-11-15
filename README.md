@@ -50,6 +50,7 @@ The pipeline includes:
 ### **1. Clone this repository**
 
 
+```bash
 git clone https://github.com/MVJyothiPriya/Bilingual-Handwriting-translator.git
 cd Bilingual-Handwriting-translator
 
@@ -59,23 +60,27 @@ cd Bilingual-Handwriting-translator
 
 If using Conda:
 
+```bash
 conda create -n handwriting python=3.10
 conda activate handwriting
 
 
 Or using venv:
 
+```bash
 python -m venv handwriting_env
 handwriting_env\Scripts\activate      # (Windows)
 source handwriting_env/bin/activate   # (Linux/Mac)
 
 ## **3. Install dependencies**
+```bash
 pip install -r requirements.txt
 
 ## **4. Verify setup**
 
 Run:
 
+```bash
 jupyter notebook notebooks/setup.ipynb
 
 
