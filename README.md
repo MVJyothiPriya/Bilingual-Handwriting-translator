@@ -55,7 +55,7 @@ cd Bilingual-Handwriting-translator
 
 
 ---
-2. Create and activate your environment
+## **2. Create and activate your environment**
 
 If using Conda:
 
@@ -69,10 +69,10 @@ python -m venv handwriting_env
 handwriting_env\Scripts\activate      # (Windows)
 source handwriting_env/bin/activate   # (Linux/Mac)
 
-3. Install dependencies
+## **3. Install dependencies**
 pip install -r requirements.txt
 
-4. Verify setup
+## **4. Verify setup**
 
 Run:
 
