@@ -49,7 +49,7 @@ The pipeline includes:
 
 ### **1. Clone this repository**
 
-```bash
+
 git clone https://github.com/MVJyothiPriya/Bilingual-Handwriting-translator.git
 cd Bilingual-Handwriting-translator
 
@@ -87,7 +87,9 @@ You should see:
 
 ✅ Sample handwriting images displayed
 
-How to Run the Notebook
+---
+
+## How to Run the Notebook
 1. Dataset Check & Environment Test
 
 Open:
@@ -103,7 +105,7 @@ Confirms dataset accessibility and format.
 
 Ensures that the environment and GPU setup are configured correctly.
 
-2. Model Training
+## 2. Model Training
 
 Run:
 
@@ -144,7 +146,7 @@ Generated outputs stored in /results/.
 
 SSIM and MSE metrics are automatically computed for evaluation.
 
-3. Launch the Interactive Interface
+## 3. Launch the Interactive Interface
 
 After training, open:
 
@@ -194,7 +196,7 @@ Processing Time: ~1–2 seconds per image on GPU.
 * Augmentation ensures balanced exposure of handwriting types across both datasets
 
 ---
-Evaluation and Results
+### Evaluation and Results
 Quantitative Evaluation
 Translation Direction	SSIM	MSE
 English → Telugu	0.451	4377.38
