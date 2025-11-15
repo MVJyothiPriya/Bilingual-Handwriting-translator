@@ -47,28 +47,22 @@ The pipeline includes:
 ## **Installation and Setup Instructions**
 
 ### **1. Clone this repository**
-
-To clone the repository and navigate into the project directory, use the following command:
-
-```bash
 git clone https://github.com/MVJyothiPriya/Bilingual-Handwriting-translator.git
+
 cd Bilingual-Handwriting-translator
 
-2. Create and activate your environmentIf using Conda:Bashconda create -n handwriting python=3.10
+
+### **2️. Create and activate your environment**
+
+If using **Conda**:
+
+```bash
+conda create -n handwriting python=3.10
 conda activate handwriting
-Or using venv:Bashpython -m venv handwriting_env
-handwriting_env\Scripts\activate      # (Windows)
-source handwriting_env/bin/activate   # (Linux/Mac)
-3. Install dependenciesBashpip install -r requirements.txt
-4. Verify setupRun:Bashjupyter notebook notebooks/setup.ipynb
-You should see:✅ Successful library imports✅ Dataset paths verified✅ Sample handwriting images displayedHow to Run the Notebook1. Dataset Check & Environment TestOpen:Bashnotebooks/setup.ipynb
-This notebook:Loads and previews English (IAM) and Telugu (TeluguSeg) handwriting samples.Confirms dataset accessibility and format.Ensures that the environment and GPU setup are configured correctly.2. Model TrainingRun:Bashnotebooks/ml_project_main.ipynb
-During training:Images are resized to $128 \times 128$, converted to grayscale, and normalized to $[-1,1]$.OpenCV filters are applied dynamically for style diversity:Gaussian Blur: simulates cursive handwriting.Dilation: creates bold strokes.Erosion: mimics thin calligraphic strokes.The model trains two generators (English→Telugu, Telugu→English) and two discriminators with adversarial, cycle, and identity losses.Training Configuration:Epochs: 84Batch size: 8Optimizer: Adam ($\text{lr} = 0.0002$, $\beta_1 = 0.5$, $\beta_2 = 0.999$)Losses: Adversarial (MSE), Cycle ($\text{L1 } \lambda = 10$), Identity ($\text{L1 } \lambda = 5$)Checkpoints saved every 10 epochsAfter training:Checkpoints saved in /checkpoints/.Generated outputs stored in /results/.SSIM and MSE metrics are automatically computed for evaluation.3. Launch the Interactive InterfaceAfter training, open:Bashcd ui
-python app_gradio.py
-The Gradio interface enables users to:Upload handwriting samples (English or Telugu).Choose translation direction (English → Telugu or Telugu → English).View original and generated handwriting side-by-side.Display SSIM and MSE scores for similarity measurement.Automatically adjust brightness and contrast for readable black-on-white outputs.Processing Time: $\sim 1–2$ seconds per image on GPU.
 
 
 
+---
 ## **Dataset Information**
 
 ### **1. IAM Handwriting Dataset (English)**
